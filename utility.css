@@ -1,0 +1,38 @@
+/* container */
+
+.container {
+  padding: 0 35px;
+  height: 100%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.nav-wrap {
+  position: relative;
+  max-width: 1680px;
+  margin: auto;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 60px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  border: none;
+  border-radius: 40px;
+  transition: all ease-in-out 300ms;
+}
+.btn:hover {
+  color: var(--primary-color);
+  background: var(--primary-color-second);
+}
+
+.btn-second {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
