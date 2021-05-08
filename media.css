@@ -1,4 +1,7 @@
 @media screen and (max-width: 960px) {
+  .overlay {
+    display: inline-block;
+  }
   .mobile {
     transform: translateX(-500px);
     transition: ease-in-out 1s;

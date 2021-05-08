@@ -124,6 +124,7 @@ img {
 }
 
 .overlay {
+  display: none;
   position: fixed;
   transform: translateX(-2000px);
   top: 0;
