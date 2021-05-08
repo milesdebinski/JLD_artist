@@ -47,23 +47,20 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background: var(--secondary-color); */
+  flex-wrap: wrap;
   color: var(--primary-color);
   opacity: 0.9;
   width: 100%;
-  /* margin: auto; */
-  height: 70px;
+  height: 48px;
   font-size: 20px;
   position: absolute;
-  /* top: 0px; */
-
   top: 35px;
   left: 50%;
   transform: translate(-50%, -50%);
-
   padding: 0 30px;
+
   /* For JavaScript */
-  transition: 0.5s;
+  transition: all ease-in-out 1s;
 }
 .nav-bg {
   position: relative;
@@ -81,7 +78,7 @@ img {
   color: var(--primary-color-second);
 }
 
-.navbar ul {
+.navbar .nav-ul {
   display: flex;
 }
 
@@ -90,6 +87,91 @@ img {
   font-family: "Playfair Display", serif;
 }
 
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  display: none;
+  color: var(--primary-color);
+  font-size: 24px;
+  cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+
+.hamburger:hover {
+  color: var(--primary-color-second);
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+/* Mobile Navbar */
+.mobile {
+  transform: translateX(-500px);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: fixed;
+  color: var(--secondary-color);
+  background: var(--primary-color-third);
+  opacity: 1;
+  font-size: 25px;
+  padding: 20px 30px;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 20;
+}
+
+.overlay {
+  position: fixed;
+  transform: translateX(-2000px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  z-index: 15;
+  transition: 2s ease-in-out;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0px);
+  transition: 0.6s ease-in-out;
+}
+
+.mobile h1 {
+  color: var(--primary-color-second);
+}
+
+.mobile a {
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  margin: 0 5px;
+  transition: all ease-in-out 200ms;
+}
+.mobile a:hover {
+  color: var(--primary-color-second);
+}
+
+.mobile .flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile .close {
+  padding: 10px 0;
+  transition: ease-in-out 200ms;
+}
+
+.mobile .close:hover {
+  color: var(--primary-color-second);
+  cursor: pointer;
+}
 /* Header */
 .hero {
   background: url("./img/bg/bg.JPG") no-repeat center center/cover;
@@ -152,7 +234,7 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
-  gap: 90px;
+  gap: 100px;
 }
 
 .main .text {
@@ -177,7 +259,8 @@ img {
 }
 
 .main img {
-  width: 1000px;
-  /* border: var(--primary-color-second) solid 1px; */
-  border-radius: 50%;
+  position: relative;
+  width: 400px;
+  margin: auto;
+  /* border-radius: 50%; */
 }

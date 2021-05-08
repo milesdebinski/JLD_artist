@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+  .mobile {
+    transform: translateX(-500px);
+    transition: ease-in-out 1s;
+  }
+  .mobile.active {
+    transform: translateX(0);
+    transition: ease-in-out 1s;
+  }
+  .navbar .nav-ul {
+    display: none;
+  }
+  .navbar .nav-ul.show {
+    transform: translateX(0);
+    transition: ease 400ms;
+  }
+  .hamburger {
+    display: block;
+  }
+  /* Main */
+  .main {
+    padding-top: 70px;
+    text-align: center;
+  }
+  .main .flex-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main img {
+    width: 260px;
+    margin-bottom: 50px;
+  }
+}
