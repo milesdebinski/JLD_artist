@@ -112,14 +112,13 @@ img {
   transform: translateX(-500px);
   display: flex;
   flex-direction: column;
-  gap: 40px;
   position: fixed;
   color: var(--secondary-color);
   background: var(--primary-color-third);
   font-family: "Playfair Display", serif;
   opacity: 1;
   font-size: 25px;
-  padding: 20px 30px;
+  padding: 25px 30px;
   left: 0;
   width: 300px;
   height: 100vh;
@@ -165,6 +164,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .mobile .close {
