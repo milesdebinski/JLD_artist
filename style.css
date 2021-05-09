@@ -204,7 +204,7 @@ img {
   color: var(--primary-color-second);
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 150px;
+  margin-bottom: 20px;
 }
 .hero .content p {
   font-size: 23px;
@@ -337,4 +337,35 @@ img {
 
 .flex-footer .contact-footer h3 {
   color: var(--primary-color-third);
+}
+
+/* Archive */
+.archive {
+  display: flex;
+  color: var(--secondary-color);
+  background: var(--primary-color-third);
+  padding: 30px 0px;
+}
+.archive h1 {
+  font-size: 65px;
+  text-align: center;
+  padding: 25px 0 65px 0;
+}
+
+.archive .row-archive {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.archive .column-archive {
+  flex: 25%;
+  max-width: 25%; /* Change only flex and max-width % for responsive*/
+  padding: 0 4px;
+}
+.archive .column-archive img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
 }
