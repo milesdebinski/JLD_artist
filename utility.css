@@ -76,6 +76,9 @@ a.current {
   object-fit: cover;
   padding: 20px;
 }
+.modal .wide {
+  max-width: 70vh;
+}
 
 .modal .modal_close {
   margin-top: -50px;
