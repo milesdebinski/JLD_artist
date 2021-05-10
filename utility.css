@@ -69,12 +69,11 @@ a.current {
 }
 
 .modal img {
-  width: 70vh;
-
+  width: auto;
   height: auto;
   max-height: 90vh;
   border-radius: 5px;
-  object-fit: contain;
+  object-fit: cover;
   padding: 20px;
 }
 
