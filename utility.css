@@ -47,3 +47,66 @@ a.current {
   color: var(--primary-color);
   background: var(--secondary-color);
 }
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.modal.activated {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal img {
+  width: 70vh;
+
+  height: auto;
+  max-height: 90vh;
+  border-radius: 5px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.modal .modal_close {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 50px;
+  font-weight: bold;
+  transition: all ease-in-out 250ms;
+  color: var(--primary-color);
+}
+
+.modal .modal_close:hover {
+  color: var(--primary-color-second);
+}
+
+.overlay_modal {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  z-index: 15;
+  transition: 400ms ease-in-out;
+}
+
+.overlay_modal.activated {
+  opacity: 1;
+  pointer-events: all;
+}
