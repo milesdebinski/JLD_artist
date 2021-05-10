@@ -18,6 +18,12 @@ a.current {
   color: var(--primary-color-second);
 }
 
+.title {
+  font-size: 65px;
+  text-align: center;
+  padding: 25px 0 65px 0;
+}
+
 /* Button */
 .btn {
   cursor: pointer;
