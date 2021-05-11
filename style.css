@@ -328,7 +328,6 @@ img {
 .footer {
   background: var(--secondary-color);
   color: var(--primary-color);
-
   text-align: center;
   padding: 40px 0px;
   border-top: 3px var(--primary-color-second) solid;
@@ -339,15 +338,16 @@ img {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 60px;
-  text-align: justify;
+  /* gap: 100px; */
+  text-align: center;
   color: var(--blank-color);
 }
 
 .flex-footer .about-footer {
   flex-basis: 0;
-  flex-grow: 1;
+  flex-grow: 2;
   padding: 0 40px;
+  text-align: justify;
 }
 
 .flex-footer .about-footer h3 {
@@ -358,7 +358,9 @@ img {
 .flex-footer .contact-footer {
   flex-basis: 0;
   flex-grow: 1;
+  text-align: justify;
   padding: 0 40px;
+  /* padding: 0 40px; */
 }
 
 .flex-footer .contact-footer h3 {
