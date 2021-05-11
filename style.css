@@ -363,6 +363,10 @@ img {
   width: 100%;
   border: 1px solid var(--primary-color);
   border-radius: 4px;
+  transform: translate(0, 50px);
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
 }
 
 /* Gallery */
@@ -381,8 +385,18 @@ img {
 .gallery .grid-gallery > * {
   border: 5px solid var(--primary-color-third);
   border-radius: 7px;
-  transition: 600ms ease;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
+  /* before show class */
+  /* transform: translate(0, 100px); */
+  visibility: hidden;
+  opacity: 0;
+}
+.gallery .grid-gallery > *:nth-child(odd) {
+  transform: translate(-100px, 0);
+}
+.gallery .grid-gallery > *:nth-child(even) {
+  transform: translate(100px, 0);
 }
 
 .gallery .grid-gallery > *:hover {

@@ -114,3 +114,11 @@ a.current {
   opacity: 1;
   pointer-events: all;
 }
+
+/* Show */
+
+#appear.show {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
