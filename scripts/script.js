@@ -28,8 +28,9 @@ const mainIsInViewport = (el) => {
     rect.top >= -200 &&
     rect.left >= 0 &&
     rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) + 50 &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      (window.innerHeight || document.documentElement.clientHeight) + 10 &&
+    rect.right <=
+      (window.innerWidth || document.documentElement.clientWidth) + 100
   );
 };
 
