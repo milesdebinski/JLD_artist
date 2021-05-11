@@ -46,3 +46,27 @@ const mainRun = () => {
 window.addEventListener("load", mainRun);
 window.addEventListener("resize", mainRun);
 window.addEventListener("scroll", mainRun);
+
+// Onscroll Navbar
+
+const navbar = document.querySelectorAll("#navbar");
+var lastScrollTop = 0;
+window.addEventListener(
+  "scroll",
+  function () {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > lastScrollTop) {
+      // downscroll code
+      navbar.forEach((item) => {
+        item.classList.add("fixed");
+      });
+    } else {
+      // upscroll code
+      navbar.forEach((item) => {
+        item.classList.remove("fixed");
+      });
+    }
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  },
+  false
+);
