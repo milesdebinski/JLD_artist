@@ -28,7 +28,7 @@ const mainIsInViewport = (el) => {
     rect.top >= -200 &&
     rect.left >= 0 &&
     rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) + 50 &&
+      (window.innerHeight || document.documentElement.clientHeight) + 60 &&
     rect.right <=
       (window.innerWidth || document.documentElement.clientWidth) + 100
   );
