@@ -18,6 +18,7 @@ body {
   background: var(--secondary-color);
   color: var(--primary-color);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
