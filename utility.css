@@ -38,6 +38,10 @@ a.current {
   border-radius: 40px;
   transition: all ease-in-out 300ms;
 }
+
+.btn#appear_itm {
+  transform: translate(0, 40px);
+}
 .btn:hover {
   color: var(--primary-color);
   background: var(--primary-color-second);
@@ -118,6 +122,27 @@ a.current {
 /* Show */
 
 #appear.show {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+#appear_itm {
+  transform: none;
+  visibility: hidden;
+  opacity: 0;
+  /* transform: translate(0, -40px); */
+  transition: ease-in-out 0.6s;
+}
+h1#appear_itm {
+  transform: translateY(-20px);
+}
+
+.main img#appear_itm.main_show {
+  transform: none;
+}
+
+#appear_itm.main_show {
   transform: none;
   visibility: visible;
   opacity: 1;
