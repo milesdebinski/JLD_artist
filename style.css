@@ -68,7 +68,8 @@ img {
   z-index: 50;
 }
 .navbar #logo {
-  width: 50px;
+  width: 55px;
+  margin-top: -2px;
   height: auto;
 }
 
