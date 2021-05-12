@@ -8,6 +8,7 @@
   --primary-color-third: #eeede0;
   --secondary-color: #13130d;
   --blank-color: #959484;
+  --gallery-color: #353535;
 }
 * {
   box-sizing: border-box;
@@ -416,8 +417,8 @@ img {
 /* Gallery */
 .gallery {
   display: flex;
-  color: var(--secondary-color);
-  background: var(--primary-color-third);
+  color: var(--primary-color);
+  background: var(--gallery-color);
   padding: 30px 0px;
   overflow-x: hidden;
 }
@@ -428,7 +429,7 @@ img {
 }
 
 .gallery .grid-gallery > * {
-  border: 5px solid var(--primary-color-third);
+  border: 5px solid var(--gallery-color);
   border-radius: 7px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
