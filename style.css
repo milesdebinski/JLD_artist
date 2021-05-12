@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap");
 
 :root {
   --primary-color: #ebe9cf;
@@ -69,6 +70,11 @@ img {
 }
 .navbar #logo {
   width: 53px;
+
+  height: auto;
+}
+.navbar #logo2 {
+  width: 120px;
 
   height: auto;
 }
