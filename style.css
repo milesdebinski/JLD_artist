@@ -347,7 +347,7 @@ img {
   color: var(--primary-color);
   text-align: center;
   padding: 40px 0px;
-  border-top: 3px var(--primary-color-second) solid;
+  /* border-top: 3px var(--primary-color-second) solid; */
 }
 
 .flex-footer {
