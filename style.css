@@ -61,16 +61,14 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  /* top: 35px; */
-  /* left: 50%; */
   transform: none;
   padding: 0px 30px;
-  margin-top: 10px;
-
+  padding-top: 10px;
   /* For JavaScript */
   transition: all ease-in-out 0.2s;
   z-index: 50;
 }
+
 .logo {
   display: flex;
   justify-content: center;
@@ -124,7 +122,6 @@ img {
 
 .navbar .logo {
   font-weight: 400;
-
   font-family: "Playfair Display", serif;
 }
 
