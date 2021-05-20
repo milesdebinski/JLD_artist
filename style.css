@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=KoHo&display=swap");
 
 :root {
   --primary-color: #ebe9cf;
@@ -81,9 +82,13 @@ img {
 }
 
 .logo .logo-text {
-  font-family: "Cinzel Decorative", cursive;
+  /* font-family: "Cinzel Decorative", cursive; */
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
+  /* font-family: "KoHo", sans-serif; */
   font-size: 44px;
-  padding-left: 10px;
+  padding-left: 7px;
+  padding-top: 10px;
 }
 
 .nav-bg {
@@ -119,6 +124,7 @@ img {
 
 .navbar .logo {
   font-weight: 400;
+
   font-family: "Playfair Display", serif;
 }
 
@@ -498,7 +504,6 @@ img {
 }
 
 .recent .beginning {
-  /* font-weight: bold; */
   font-style: italic;
   font-size: 20px;
 }
@@ -511,7 +516,7 @@ img {
 
 .flex-recent img {
   border-radius: 5px;
-  /* border: 1px solid #000; */
+
   float: right;
   width: 250px;
   height: auto;
