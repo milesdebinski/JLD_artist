@@ -63,20 +63,20 @@ img {
   left: 0;
   transform: none;
   padding: 0px 30px;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 
   /* For JavaScript */
   transition: all ease-in-out 0.2s;
   z-index: 50;
 }
 .navbar ul {
-  /* margin-top: 10px; */
+  padding-top: 10px;
 }
 .navbar .hamburger {
-  /* margin-top: 10px; */
+  padding-top: 10px;
 }
 .logo {
-  /* margin-top: 10px; */
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
