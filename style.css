@@ -70,24 +70,25 @@ img {
   transition: all ease-in-out 0.2s;
   z-index: 50;
 }
-.navbar #logo {
-  width: 53px;
-
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo .logo-img {
+  width: 65px;
   height: auto;
 }
-.navbar #logo2 {
-  width: 120px;
 
-  height: auto;
-}
-.navbar #logo3 {
+.logo .logo-text {
   font-family: "Cinzel Decorative", cursive;
-  font-size: 45px;
+  font-size: 44px;
+  padding-left: 10px;
 }
 
 .nav-bg {
   position: fixed;
-  height: 71px;
+  height: 84px;
   background: var(--secondary-color);
   width: 100%;
   transition: all ease-in-out 0.7s;
@@ -179,7 +180,7 @@ img {
 }
 
 .mobile h1 {
-  color: var(--primary-color-second);
+  color: var(--secondary-color);
 }
 
 .mobile a {
@@ -361,15 +362,32 @@ img {
 }
 
 .flex-footer .about-footer {
+  display: flex;
+  flex-direction: column;
   flex-basis: 0;
   flex-grow: 2;
   padding: 0 40px;
   text-align: justify;
 }
+.flex-footer .about-footer .logo {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin-top: -5px;
+}
+.flex-footer .about-footer .logo .logo-img {
+  width: 40px;
+}
 
-.flex-footer .about-footer h3 {
-  color: var(--primary-color-second);
-  font-family: "Playfair Display", serif;
+.flex-footer .about-footer h1 {
+  color: var(--primary-color-third);
+  font-size: 25px;
+  padding-left: 8px;
+}
+.flex-footer .about-footer p {
+  /* background: #000; */
+  margin-top: 10px;
 }
 
 .flex-footer .contact-footer {
