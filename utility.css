@@ -85,7 +85,7 @@ a.current {
   position: relative;
   width: auto;
   height: auto;
-  max-width: 90vh;
+  max-width: 60vw;
   object-fit: cover;
   padding: 20px 20px 0px 20px;
 }
