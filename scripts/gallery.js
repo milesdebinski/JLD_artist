@@ -36,7 +36,20 @@ function closeModal(modal) {
   modal.classList.remove("activated");
   overlay_modal.classList.remove("activated");
 }
+// Change modal image
+const artwork = document.querySelectorAll(".artwork");
+const modal_choice = document.querySelectorAll(".modal_choice");
 
+modal_choice.forEach((el) => {
+  el.addEventListener("click", () => {
+    let attribute = el.getAttribute("src");
+    let id = el.getAttribute("id");
+
+    artwork[id].setAttribute("src", attribute);
+    modal_choice.forEach((el) => el.classList.remove("current"));
+    el.classList.add("current");
+  });
+});
 // viewport items
 const items = document.querySelectorAll("#appear");
 
