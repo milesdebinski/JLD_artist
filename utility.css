@@ -85,7 +85,8 @@ a.current {
   position: relative;
   width: auto;
   height: auto;
-  max-width: 60vw;
+  max-width: 70vw;
+  max-height: 70vh;
   object-fit: cover;
   padding: 20px 20px 0px 20px;
 }
@@ -125,13 +126,13 @@ a.current {
   left: 0;
   margin-left: 30px;
   /* bottom: 100px; */
-  font-size: 20px;
+  font-size: 18px;
   /* border: red 5px solid; */
 }
 
 .modal .art_description p.art_title {
-  font-size: 28px;
-  line-height: 1.2;
+  font-size: 22px;
+  line-height: 1.4;
 }
 .modal .modal_close {
   margin-top: -50px;
