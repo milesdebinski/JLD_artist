@@ -71,15 +71,14 @@ a.current {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: 600ms ease-out;
+  transition: all 600ms ease-out;
   border-radius: 10px;
   z-index: 20;
-
-  /* width: 300px; */
 }
 
 .modal.activated {
   transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 .modal img {
   position: relative;
@@ -98,7 +97,9 @@ a.current {
   align-items: center;
   order: -1;
 }
-.modal .choose_img img {
+.modal .choose_img img,
+.modal .choose_img p {
+  /* display: block; */
   max-width: 80px;
   max-height: 80px;
   padding: 0;
@@ -107,16 +108,36 @@ a.current {
   border: 3px solid rgba(255, 255, 255, 0);
   transition: 350ms ease-in-out;
 }
-.modal .choose_img img.current {
+.modal .choose_img p {
+  font-size: 4px;
+  line-height: 1;
+  text-align: justify;
+  overflow: hidden;
+}
+.modal .choose_img img.current,
+.modal .choose_img p.current {
   border: 3px solid var(--primary-color);
 }
-.modal .choose_img img:hover {
+.modal .choose_img img:hover,
+.modal .choose_img p:hover {
   border: 3px solid var(--primary-color);
 }
 
 .modal .flex_artwork {
   display: flex;
   flex-direction: column;
+}
+.modal .flex_artwork > p {
+  text-align: justify;
+  padding: 10px 20px 0px 20px;
+  display: none;
+}
+.modal .flex_artwork p.show {
+  display: block;
+}
+.modal .flex_artwork img.artwork,
+.modal .flex_artwork .art_paragraph {
+  transition: 250ms ease-in;
 }
 .modal .art_description {
   display: flex;
@@ -133,7 +154,7 @@ a.current {
 
 .modal .art_description p.art_title {
   font-size: 22px;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 .modal .modal_close {
   margin-top: -50px;

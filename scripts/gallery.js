@@ -1,5 +1,4 @@
 // Modal
-
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-modal-close]");
 const overlay_modal = document.querySelector(".overlay_modal");
@@ -39,15 +38,32 @@ function closeModal(modal) {
 // Change modal image
 const artwork = document.querySelectorAll(".artwork");
 const modal_choice = document.querySelectorAll(".modal_choice");
+const art_paragraph = document.querySelectorAll(".art_paragraph");
 
 modal_choice.forEach((el) => {
   el.addEventListener("click", () => {
     let attribute = el.getAttribute("src");
     let id = el.getAttribute("id");
 
-    artwork[id].setAttribute("src", attribute);
-    modal_choice.forEach((el) => el.classList.remove("current"));
-    el.classList.add("current");
+    artwork[id].style.opacity = 0;
+    art_paragraph[id].style.opacity = 0;
+    setTimeout(() => {
+      if (el.nodeName === "P") {
+        artwork[id].style.display = "none";
+        art_paragraph[id].classList.add("show");
+      } else {
+        art_paragraph[id].classList.remove("show");
+        artwork[id].style.display = "flex";
+        artwork[id].setAttribute("src", attribute);
+      }
+      modal_choice.forEach((el) => el.classList.remove("current"));
+      el.classList.add("current");
+
+      setTimeout(() => {
+        artwork[id].style.opacity = 1;
+        art_paragraph[id].style.opacity = 1;
+      }, 50);
+    }, 300);
   });
 });
 // viewport items

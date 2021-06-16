@@ -48,7 +48,6 @@ window.addEventListener("resize", mainRun);
 window.addEventListener("scroll", mainRun);
 
 // Onscroll Navbar
-
 const navbar = document.querySelectorAll("#navbar");
 var lastScrollTop = 0;
 window.addEventListener(
@@ -70,3 +69,12 @@ window.addEventListener(
   },
   false
 );
+
+// show navbar when cursor hight
+window.addEventListener("mousemove", (el) => {
+  if (el.screenY < 220) {
+    navbar.forEach((item) => {
+      item.classList.remove("fixed");
+    });
+  }
+});

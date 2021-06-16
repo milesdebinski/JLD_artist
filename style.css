@@ -12,6 +12,7 @@
   --blank-color: #959484;
   --gallery-color: #27292c;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -449,7 +450,7 @@ img {
 
 .gallery .grid-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
 
 .gallery .grid-gallery > * {
