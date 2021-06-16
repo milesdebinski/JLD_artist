@@ -2,6 +2,8 @@
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-modal-close]");
 const overlay_modal = document.querySelector(".overlay_modal");
+const modal_choice = document.querySelectorAll(".modal_choice");
+const art_description = document.querySelectorAll(".art_description");
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -28,16 +30,30 @@ function openModal(modal) {
   if (modal == null) return;
   modal.classList.add("activated");
   overlay_modal.classList.add("activated");
+
+  modal_choice.forEach((el, i) =>
+    setTimeout(() => {
+      el.classList.add("activated");
+    }, 200)
+  );
+  art_description.forEach((el, i) =>
+    setTimeout(() => {
+      el.classList.add("activated");
+    }, 500)
+  );
 }
 
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove("activated");
   overlay_modal.classList.remove("activated");
+
+  modal_choice.forEach((el, i) => el.classList.remove("activated"));
+  art_description.forEach((el, i) => el.classList.remove("activated"));
 }
 // Change modal image
 const artwork = document.querySelectorAll(".artwork");
-const modal_choice = document.querySelectorAll(".modal_choice");
+
 const art_paragraph = document.querySelectorAll(".art_paragraph");
 
 modal_choice.forEach((el) => {
