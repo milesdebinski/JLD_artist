@@ -62,8 +62,8 @@ modal_choice.forEach((el) => {
       setTimeout(() => {
         artwork[id].style.opacity = 1;
         art_paragraph[id].style.opacity = 1;
-      }, 50);
-    }, 300);
+      }, 150);
+    }, 250);
   });
 });
 // viewport items
