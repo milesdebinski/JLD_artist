@@ -70,16 +70,15 @@ a.current {
   align-items: flex-start;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -45%) scale(1);
+  transform: translate(-50%, -45%);
   transition: all 600ms ease-out;
   border-radius: 10px;
-  /* z-index: 20; */
   opacity: 0;
   z-index: -1;
 }
 
 .modal.activated {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   opacity: 1;
   z-index: 100;
 }
@@ -264,11 +263,11 @@ h1#appear_itm {
 }
 
 .main img#appear_itm.main_show {
-  transform: none;
+  transform: translateY(0);
 }
 
 #appear_itm.main_show {
-  transform: none;
+  transform: translate(0, 0);
   visibility: visible;
   opacity: 1;
 }
