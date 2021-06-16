@@ -74,11 +74,20 @@ a.current {
   transition: 600ms ease-out;
   border-radius: 10px;
   z-index: 20;
-  padding: 50px;
+
+  /* width: 300px; */
 }
 
 .modal.activated {
   transform: translate(-50%, -50%) scale(1);
+}
+.modal img {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 90vh;
+  object-fit: cover;
+  padding: 20px 20px 0px 20px;
 }
 .modal .choose_img {
   width: 100%;
@@ -103,15 +112,6 @@ a.current {
   border: 3px solid var(--primary-color);
 }
 
-.modal img {
-  position: relative;
-  width: auto;
-  height: auto;
-  /* max-height: 90vh; */
-  max-width: 1000px;
-  object-fit: cover;
-  padding: 20px 20px 0px 20px;
-}
 .modal .flex_artwork {
   display: flex;
   flex-direction: column;
