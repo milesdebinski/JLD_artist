@@ -99,7 +99,8 @@ a.current {
   order: -1;
 }
 .modal .choose_img img {
-  max-width: 140px;
+  max-width: 80px;
+  max-height: 80px;
   padding: 0;
   margin: 20px 0px 0px 20px;
   cursor: pointer;
