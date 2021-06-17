@@ -151,6 +151,7 @@ a.current {
   flex-direction: column;
 }
 .modal .flex_artwork > p {
+  width: 70vw;
   text-align: justify;
   padding: 10px 20px 0px 20px;
   display: none;
@@ -194,20 +195,27 @@ a.current {
   transform: rotate(-45deg);
   left: 6px;
 } */
+
 .modal .art_description {
   display: flex;
   flex-direction: row;
   height: 100%;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   left: 0;
-  margin-left: 30px;
+  margin: 10px 0px 0px 0px;
+
   /* bottom: 100px; */
   font-size: 18px;
   /* border: red 5px solid; */
   transform: translate(0, 15px);
   transition: 550ms ease-in-out;
   opacity: 0;
+}
+.modal .art_description > * {
+  padding: 0;
+  margin: 0;
 }
 .modal .art_description.activated {
   transform: translate(0, 0);
