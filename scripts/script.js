@@ -21,9 +21,10 @@ exit.addEventListener("click", () => {
 
 // viewport items
 const mainItems = document.querySelectorAll("#appear_itm");
-
+console.log(window.innerWidth);
 const mainIsInViewport = (el) => {
   const rect = el.getBoundingClientRect();
+
   return (
     rect.top >= -200 &&
     rect.bottom <=
