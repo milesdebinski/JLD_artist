@@ -21,22 +21,22 @@
     display: block;
   }
   /* Main */
-  .main {
+  /* .main {
     padding-top: 70px;
     text-align: center;
-  }
-  .main .flex-info {
+  } */
+  /* .main .flex-info {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
     gap: 10px;
-  }
+  } */
   /* .main img {
     width: 360px;
   } */
 
-  .main .text {
+  /* .main .text {
     margin-left: 0px;
     padding: 0 40px;
-  }
+  } */
 }

@@ -37,12 +37,15 @@ const mainIsInViewport = (el) => {
 const mainRun = () => {
   mainItems.forEach((item) => {
     if (mainIsInViewport(item)) {
-      item.classList.add("main_show");
+      setTimeout(() => {
+        item.classList.add("main_show");
+      }, 250);
     }
   });
 };
 
 //Trigger Events
+
 window.addEventListener("load", mainRun);
 window.addEventListener("resize", mainRun);
 window.addEventListener("scroll", mainRun);

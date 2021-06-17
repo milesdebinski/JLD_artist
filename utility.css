@@ -1,7 +1,7 @@
 /* container */
 
 .container {
-  padding: 0 35px;
+  padding: 0 25px;
   height: 100%;
   max-width: 1280px;
   margin: auto;
@@ -44,7 +44,7 @@ a.current {
   background: var(--primary-color);
   border: none;
   border-radius: 40px;
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 100ms;
 }
 
 .btn#appear_itm {
@@ -59,6 +59,9 @@ a.current {
   color: var(--primary-color);
   background: var(--secondary-color);
 }
+.btn-second:hover {
+  color: var(--secondary-color);
+}
 
 /* Modal */
 
@@ -71,7 +74,7 @@ a.current {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -45%);
-  transition: all 600ms ease-out;
+  transition: all 500ms ease-out;
   border-radius: 10px;
   opacity: 0;
   z-index: -1;
@@ -111,13 +114,22 @@ a.current {
   transition: 350ms ease-in-out;
 }
 .modal .choose_img p {
-  font-size: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
   line-height: 1;
-  text-align: justify;
+  text-align: center;
   overflow: hidden;
+  padding: 4px 4px 6px 4px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0);
+  color: var(--primary-color);
 }
-.modal .choose_img img.current,
 .modal .choose_img p.current {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.modal .choose_img img.current {
   border: 3px solid var(--primary-color);
 }
 .modal .choose_img img:hover,
@@ -214,8 +226,8 @@ a.current {
   border: none;
   outline: none;
   background: none;
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 38px;
+  font-weight: 300;
   transition: all ease-in-out 250ms;
   color: var(--primary-color);
   z-index: 1;
@@ -256,7 +268,8 @@ a.current {
   visibility: hidden;
   opacity: 0;
   /* transform: translate(0, -40px); */
-  transition: ease-in-out 1s;
+  transition: opacity ease-in-out 1s, transform ease-in-out 1s,
+    background ease-in-out 350ms, color ease-in-out 350ms;
 }
 h1#appear_itm {
   transform: translateY(-15px);

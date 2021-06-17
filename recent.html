@@ -10,21 +10,20 @@
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="media.css">
     <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/gallery.js" defer></script>
     <title>JLD Art</title>
   </head>
   <body>
-
+    <div class="overlay_modal"></div>
     <!-- mobile header -->
     <div class="overlay" id='overlay'></div>
     <nav class="mobile" id="mobile">
       <div class="flex-row"><div class="logo">
         <img src="./img/logo/JLD1.png" alt="" class="logo-img">
         <h1 class="logo-text">JLD</h1>
-
       </div>
       <i class="fas fa-times close" id="close"></i>
     </div>
-
       <ul class="nav-ul" id="nav-ul">
         <li><a  href="index.html">Home</a></li>
         <li><a  href="about.html">About</a></li>
@@ -41,6 +40,8 @@
 
           <div id="navbar"class="navbar">
             <div class="logo">
+
+              
               <img src="./img/logo/JLD1.png" alt="" class="logo-img">
               <h1 class="logo-text">JLD</h1>
 
@@ -61,14 +62,48 @@
       <!-- hero -->
      
     </header>
+    <!-- Modal 1 -->
+    <div class="active modal" id="modal_0">
+      <div class="flex_artwork">
+        <p class="art_paragraph"></p>
+        <img class="artwork" src="/img/recent/R1.JPG" alt="">
+        
+        <div class="art_description">
+          <p class="art_title"> </p>           
+          <p> </p>
+          <p></p>
+       </div>
+    </div>
+      <div class="choose_img">
+        <img id="0" class="current modal_choice" src="./img/recent/R1.jpg" alt="">
+        <img id="0"class="modal_choice" src="./img/recent/R2.jpg" alt="">
+        <img id="0" class="modal_choice" src="./img/recent/R3.jpg" alt="">
+        <img id="0" class="modal_choice" src="./img/recent/R4.jpg" alt="">
+        <img id="0" class="modal_choice" src="./img/recent/R5.jpg" alt="">
+      </div>
+        <div class="modal_header">
+          <button data-modal-close class="modal_close">&times;</button>
+        </div>
+    </div>
+
+    <!-- --- -->
     <secion  class="recent">
       <div class="container">
         <h1 id="appear_itm"class="title">Recent Work</h1>
-        <p id="appear_itm"class="beginning title_description">The Beginning Of The Future</p>
+        
         <div class="flex-recent">
-          <img id="appear_itm" src="./img/recent/R2.JPG" alt="">
-          <p id="appear_itm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eligendi commodi animi neque repudiandae reiciendis in, natus placeat perferendis laborum, quasi hic sed eos dolor accusantium aspernatur mollitia ut quaerat? Maxime quidem voluptatum, praesentium ab mollitia eveniet at autem ea sunt soluta architecto corporis illo sit itaque accusamus reprehenderit. Sed quod dicta totam dolore neque numquam tempora voluptate blanditiis voluptatibus illum aliquam veniam, at esse? Iste illum repellendus perferendis modi in. Eligendi aspernatur, voluptatum id quo vitae praesentium dolorum eaque, sit ut nostrum dolore, ipsa voluptatibus aliquid eos impedit fugiat.</p>
-          
+          <div class="text">
+            <p id="appear_itm"class="beginning title_description">The Beginning Of The Future</p>
+            <p>&nbsp| iron, earth, grass, 1.35 x 1.5 x 7 m  |&nbsp </p>
+            <p>2015</p>
+           </div>
+
+          <div data-modal-target="#modal_0" id="appear" class="gallery-item ">
+            <img src="./img/recent/R1.JPG" alt="">
+           </div>
+           
+           
+          <p id="appear_itm">The following work was inspired by holding an apple in the hand as if a globe, and imagining what would happen if we do not stop the knife when it has finished with the skin, but continue to peel the flesh also. An allegory of our time.</p>
         </div>
       </div>
     </secion>
