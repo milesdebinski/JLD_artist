@@ -293,3 +293,24 @@ h1#appear_itm {
   visibility: visible;
   opacity: 1;
 }
+#appear_itm_mobile {
+  transform: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 450ms ease-in-out;
+}
+#appear_itm_mobile.main_show {
+  transform: translate(0, 0);
+  visibility: visible;
+  opacity: 1;
+}
+
+#phone_number,
+#email_address {
+  transition: 250ms ease-in-out;
+}
+#phone_number:hover,
+#email_address:hover {
+  cursor: pointer;
+  color: #fff;
+}

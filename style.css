@@ -114,6 +114,9 @@ img {
 .navbar a:hover {
   color: var(--primary-color-second);
 }
+.navbar #logo_home {
+  cursor: pointer;
+}
 
 .navbar .nav-ul {
   display: flex;
