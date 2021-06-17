@@ -26,11 +26,8 @@ const mainIsInViewport = (el) => {
   const rect = el.getBoundingClientRect();
   return (
     rect.top >= -200 &&
-    rect.left >= 0 &&
     rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) + 60 &&
-    rect.right <=
-      (window.innerWidth || document.documentElement.clientWidth) + 100
+      (window.innerHeight || document.documentElement.clientHeight) + 60
   );
 };
 

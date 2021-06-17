@@ -222,6 +222,7 @@ a.current {
   position: relative;
   margin-top: -50px;
   margin-left: -10px;
+  /* padding-right: 15px; */
   cursor: pointer;
   border: none;
   outline: none;

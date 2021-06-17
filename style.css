@@ -449,6 +449,13 @@ img {
 
 .flex-footer .contact-footer h3 {
   color: var(--primary-color-third);
+  grid-area: contact;
+}
+.flex-footer .contact-footer .phone {
+  grid-area: phone;
+}
+.flex-footer .contact-footer .email {
+  grid-area: email;
 }
 
 /* Archive */
@@ -570,14 +577,17 @@ img {
 }
 
 .flex-recent img {
-  border-radius: 5px;
+  border-radius: 7px;
   position: relative;
-
   float: right;
   max-width: 650px;
   height: auto;
   margin-left: 15px;
   margin-top: 16px;
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+.flex-recent img:hover {
+  border-color: var(--secondary-color);
 }
 
 .flex-recent > p {
